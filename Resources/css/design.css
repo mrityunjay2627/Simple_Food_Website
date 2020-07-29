@@ -1,10 +1,10 @@
-*{
+*{  /* Default CSS layout */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html{ /* Default HTML layout */
     background-color: #fff;  /* White */
     color: #555;  /* Text color */
     font-family: 'Lato', 'Arial', sans-serif;
