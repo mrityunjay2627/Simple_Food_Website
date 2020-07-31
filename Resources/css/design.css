@@ -13,3 +13,9 @@ html{ /* Default HTML layout */
     text-rendering: optimizeLegibility;
     /* The text-rendering CSS property provides information to the rendering engine about what to optimize for when rendering text. */
 }
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;  /* Top Right Bottom Left*/
+   /* margin: 0 auto;  /*Top/Bottom and Right/Left*/  */ /* We can use this instead of line 19 */
+}
