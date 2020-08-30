@@ -1,4 +1,9 @@
 /* Do see box model on mdn mozilla for better understanding. */
+
+/*----------------------------------------------------------------------------*/
+/* Basic Setup */
+/*----------------------------------------------------------------------------*/
+
 *{  /* Default CSS layout */
     margin: 0;
     padding: 0;
@@ -15,26 +20,19 @@ html{ /* Default HTML layout */
     /* The text-rendering CSS property provides information to the rendering engine about what to optimize for when rendering text. */
 }
 
+/*----------------------------------------------------------------------------*/
+/* Reusable Components */
+/*----------------------------------------------------------------------------*/
+
 .row{
     max-width: 1140px; /* If the content is larger than the maximum width, it will automatically change the height of the element. */
     margin: 0 auto 0 auto;  /* Top Right Bottom Left*/
    /* margin: 0 auto;  /*Top/Bottom and Right/Left*/  */ /* We can use this instead of line 19 */
 }
 
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) , url(img_css/hero.jpg); /* Line gradient is used to color the image and adjust the visibility and url is used to set the image in the background. */
-    background-size: cover; /* To see the whole image. Previously, zoomed out image can be seen before applying this. Now, whole image can be seen clearly. */
-    background-position: center; /* Image to come in the center. */
-    height: 100vh; /* vh means viewport, like, how much image you will see in your website. 100vh means 100% viewport. */
-} 
-
-.hero-text-box{
-    position: absolute;
-    width: 1140px; /* Equal to max-width */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) /* this does is to translate the element half of its width and of its height, up and to the left.So now it is centered */
-}
+/*-----------------------------------------------------------------------------*/
+/* Headings */
+/*-----------------------------------------------------------------------------*/
 
 h1{
     margin: 0; /* Used because h1 element has some margin due to which it cannot be written at the top of website. Also, background image couldn't be seen because of this.*/
@@ -46,6 +44,10 @@ h1{
     letter-spacing: 1px; /* Some space within letters. */
     word-spacing: 4px; /* Some space within words. */
 }
+
+/*----------------------------------------------------------------------------*/
+/* Buttons */
+/*----------------------------------------------------------------------------*/
 
 .btn:link, .btn:visited{ /* To prevent any changes on buttons after visiting the website like when we click on the button, it changes to purple which means we have visited it. We need to  prevent that by using link and visited. */
     display: inline-block; 
@@ -80,3 +82,21 @@ h1{
     border: 1px solid #cf6d17;
     color: #fff; /* When hover or active, text color will change to #fff from #e67e22. */
 }
+
+/*-----------------------------------------------------------------------------*/
+/* Header */
+/*-----------------------------------------------------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) , url(img_css/hero.jpg); /* Line gradient is used to color the image and adjust the visibility and url is used to set the image in the background. */
+    background-size: cover; /* To see the whole image. Previously, zoomed out image can be seen before applying this. Now, whole image can be seen clearly. */
+    background-position: center; /* Image to come in the center. */
+    height: 100vh; /* vh means viewport, like, how much image you will see in your website. 100vh means 100% viewport. */
+} 
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px; /* Equal to max-width */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) /* this does is to translate the element half of its width and of its height, up and to the left.So now it is centered */
