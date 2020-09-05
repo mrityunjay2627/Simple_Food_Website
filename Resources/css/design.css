@@ -52,7 +52,7 @@ h1{
 .btn:link, .btn:visited{ /* To prevent any changes on buttons after visiting the website like when we click on the button, it changes to purple which means we have visited it. We need to  prevent that by using link and visited. */
     display: inline-block; 
     padding: 10px 30px;
-    font-weight: 300;
+    font-weight: 300;  /* The font-weight property defines how bold you text are and there are a lot of possible values; normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900, and inherit. */
     text-decoration: none; /* To remove underline on button. */
     border-radius: 200px; /* To change button from rectangle to sphere. */
     transition: background-color 0.2s, border 0.2s, color 0.2s; /* The background color, border and text color will not change instantaneously,but over a period of 0.2 seconds. */
