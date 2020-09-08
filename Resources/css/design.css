@@ -88,7 +88,7 @@ h1{
 /*-----------------------------------------------------------------------------*/
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) , url(img_css/hero.jpg); /* Line gradient is used to color the image and adjust the visibility and url is used to set the image in the background. */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)) , url(img_css/junk_food.cms); /* Line gradient is used to color the image and adjust the visibility and url is used to set the image in the background. */
     background-size: cover; /* To see the whole image. Previously, zoomed out image can be seen before applying this. Now, whole image can be seen clearly. */
     background-position: center; /* Image to come in the center. */
     height: 100vh; /* vh means viewport, like, how much image you will see in your website. 100vh means 100% viewport. */
@@ -100,3 +100,48 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) /* this does is to translate the element half of its width and of its height, up and to the left.So now it is centered */
+}
+
+.logo {
+    height: 150px;
+    width: auto; /* Default value. The browser calculates the width */
+    float: left; /* The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning). */
+    margin-top: 20px; /* Margin from top. */
+}
+
+.logo-black { 
+    display: none;
+    height: 50px;
+    width: auto; 
+    float: left;
+    margin: 5px 0;
+}
+
+/* Main navi */
+.main-nav {
+    float: right;
+    list-style: none; /* The list-style CSS shorthand property allows you set all the list style properties at once. Here, none isused bu us in order to remove bullet points from navigations. */
+    margin-top: 55px;
+}
+
+.main-nav li { /* By doing this, we are adjusting the properties of all li elements. */
+    display: inline-block; /* To make 4 different links in the single line in form of blocks.  */
+    margin-left: 40px; /* Each of those blocks has a left side margin of 40px. */
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0; /* To create the distance between line and text when hover over it. */
+    color: #fff;
+    text-decoration: none; /* To get rid of the underline. */
+    text-transform: uppercase;
+    font-size: 90%; /* 90% means 18px. */
+    border-bottom: 2px solid transparent; /* Means no effect on the border of the links or background of the website. Untill we hover it. */
+   /* -webkit-transition: border-bottom 0.2s; */
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
