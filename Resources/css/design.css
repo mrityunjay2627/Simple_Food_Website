@@ -30,6 +30,10 @@ html{ /* Default HTML layout */
    /* margin: 0 auto;  /*Top/Bottom and Right/Left*/  */ /* We can use this instead of line 19 */
 }
 
+section{
+    padding: 80px 0; /* We can't use margin because we would need some space below for images. */
+}
+
 /*-----------------------------------------------------------------------------*/
 /* Headings */
 /*-----------------------------------------------------------------------------*/
