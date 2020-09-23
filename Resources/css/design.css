@@ -32,9 +32,13 @@ html{ /* Default HTML layout */
 }
 
 section{
-    padding: 80px 0; /* We did not used margin because we need to use white space below the section for background images and if we use margin, it will take up whole space */
-    
+    padding: 80px 0; /* We did not used margin because we need to use white space below the section for background images and if we use margin, it will take up whole space *   
 }
+    
+/*.box {
+    padding: 1%;
+}
+    */
 
 /*-----------------------------------------------------------------------------*/
 /* Headings */
